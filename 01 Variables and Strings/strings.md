@@ -66,7 +66,7 @@ console.log(char);  // A
 ```
 ### Other Common String Methods
 
-The indexOf Method: This method is used to search for a substring within a string. If the substring is found, indexOf returns the index (or position) of the first occurrence of that substring. If the substring is not found, indexOf returns -1, which indicates that the search was unsuccessful.
+**1. The indexOf Method**: This method is used to search for a substring within a string. If the substring is found, indexOf returns the index (or position) of the first occurrence of that substring. If the substring is not found, indexOf returns -1, which indicates that the search was unsuccessful.
 
 ```
 const text = "The quick brown fox jumps over the lazy dog.";
@@ -74,7 +74,7 @@ console.log(text.indexOf("fox")); // 16
 console.log(text.indexOf("cat")); // -1
 ```
 
-The includes() Method: This method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns true. Otherwise, it returns false.
+**2. The includes() Method**: This method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns true. Otherwise, it returns false.
 
 ```
 const text = "The quick brown fox jumps over the lazy dog.";
@@ -82,7 +82,7 @@ console.log(text.includes("fox")); // true
 console.log(text.includes("cat")); // false
 ```
 
-The slice() Method: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
+**3. The slice() Method**: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
 
 ```
 const text = "freeCodeCamp";
@@ -91,63 +91,63 @@ console.log(text.slice(4, 8));  // "Code"
 console.log(text.slice(8, 12)); // "Camp"
 ```
 
-The toUpperCase() Method: This method converts all the characters to uppercase letters and returns a new string with all uppercase characters.
+**4. The toUpperCase() Method**: This method converts all the characters to uppercase letters and returns a new string with all uppercase characters.
 
 ```
 const text = "Hello, world!";
 console.log(text.toUpperCase()); // "HELLO, WORLD!"
 ```
 
-The toLowerCase() Method: This method converts all characters in a string to lowercase.
+**5. The toLowerCase() Method**: This method converts all characters in a string to lowercase.
 
 ```
 const text = "HELLO, WORLD!"
 console.log(text.toLowerCase()); // "hello, world!"
 ```
 
-The replace() Method: This method allows you to find a specified value (like a word or character) in a string and replace it with another value. The method returns a new string with the replacement and leaves the original unchanged because JavaScript strings are immutable.
+**6. The replace() Method**: This method allows you to find a specified value (like a word or character) in a string and replace it with another value. The method returns a new string with the replacement and leaves the original unchanged because JavaScript strings are immutable.
 
 ```
 const text = "I like cats";
 console.log(text.replace("cats", "dogs")); // "I like dogs"
 ```
 
-The replaceAll() Method: This method allows you to find all occurrences of a specified value (a word, character, or pattern) in a string and replace them with another value. It works like replace(), but instead of stopping after the first match, it updates every match found in the string.
+**7. The replaceAll() Method**: This method allows you to find all occurrences of a specified value (a word, character, or pattern) in a string and replace them with another value. It works like replace(), but instead of stopping after the first match, it updates every match found in the string.
 
 ```
 const text = "I love cats and cats are so much fun!";
 console.log(text.replaceAll("cats", "dogs")); // "I love dogs and dogs are so much fun!"
 ```
 
-The repeat() Method: This method is used to repeat a string a specified number of times.
+**8. The repeat() Method**: This method is used to repeat a string a specified number of times.
 
 ```
 const text = "Hello";
 console.log(text.repeat(3)); // "HelloHelloHello"
 ```
 
-The trim() Method: This method is used to remove whitespaces from both the beginning and the end of a string.
+**9. The trim() Method**: This method is used to remove whitespaces from both the beginning and the end of a string.
 
 ```
 const text = "  Hello, world!  ";
 console.log(text.trim()); // "Hello, world!"
 ```
 
-The trimStart() Method: This method removes whitespaces from the beginning (or "start") of the string.
+**10. The trimStart() Method**: This method removes whitespaces from the beginning (or "start") of the string.
 
 ```
 const text = "  Hello, world!  ";
 console.log(text.trimStart()); // "Hello, world!  "
 ```
 
-The trimEnd() Method: This method removes whitespaces from the end of the string.
+**11. The trimEnd() Method**: This method removes whitespaces from the end of the string.
 
 ```
 const text = " Hello, world! ";
 console.log(text.trimEnd()); // "  Hello, world!"
 ```
 
-The prompt() Method: This method of the window is used to get information from a user through the form of a dialog box. This method takes two arguments. The first argument is the message which will appear inside the dialog box, typically prompting the user to enter information. The second one is a default value which is optional and will fill the input field initially.
+**12. The prompt() Method**: This method of the window is used to get information from a user through the form of a dialog box. This method takes two arguments. The first argument is the message which will appear inside the dialog box, typically prompting the user to enter information. The second one is a default value which is optional and will fill the input field initially.
 
 ```
 const answer = window.prompt("What's your favorite animal?"); // This will change 
